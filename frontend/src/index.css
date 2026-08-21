@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #040805;
+    background-image: 
+      radial-gradient(circle at 50% 10%, rgba(0, 240, 118, 0.12) 0%, transparent 70%),
+      radial-gradient(circle at 80% 80%, rgba(255, 42, 133, 0.08) 0%, transparent 60%),
+      linear-gradient(to right, rgba(17, 51, 32, 0.20) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17, 51, 32, 0.20) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Scrollbar for inner cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #040805;
+}
+::-webkit-scrollbar-thumb {
+  background: #113320;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f076;
+}
+
+@layer components {
+  /* HH Goa Sticker Badges */
+  .hh-sticker {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    transition: all 150ms ease-in-out;
+  }
+
+  .hh-sticker-gold {
+    background-color: #ffee00;
+    color: #000000;
+    border-color: #000000;
+    box-shadow: 2px 2px 0px 0px #ffee00;
+  }
+  .hh-sticker-gold:hover {
+    transform: translateY(-1px);
+  }
+
+  .hh-sticker-pink {
+    background-color: #ff2a85;
+    color: #ffffff;
+    border-color: #000000;
+    box-shadow: 2px 2px 0px 0px #ff2a85;
+  }
+  .hh-sticker-pink:hover {
+    transform: translateY(-1px);
+  }
+
+  .hh-sticker-emerald {
+    background-color: #00f076;
+    color: #000000;
+    border-color: #000000;
+    box-shadow: 2px 2px 0px 0px #00f076;
+  }
+  .hh-sticker-emerald:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Audio Ring Pulse Animation */
+@keyframes mic-ring-expand {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+}
+
+.mic-ring-active {
+  animation: mic-ring-expand 1.5s infinite ease-in-out;
+}

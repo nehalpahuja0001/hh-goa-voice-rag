@@ -1,0 +1,221 @@
+{
+  "timestamp": "2026-08-21 11:27:49",
+  "total_queries_tested": 20,
+  "total_suite_duration_sec": 0.0,
+  "metrics": {
+    "e2e": {
+      "p50": 0.12,
+      "p70": 0.14,
+      "p100": 0.83,
+      "avg": 0.17,
+      "min": 0.11,
+      "max": 0.83
+    },
+    "retrieval": {
+      "p50": 0.04,
+      "p70": 0.05,
+      "p100": 0.46,
+      "avg": 0.07,
+      "min": 0.04,
+      "max": 0.46
+    },
+    "guardrails": {
+      "p50": 0.01,
+      "p70": 0.01,
+      "p100": 0.06,
+      "avg": 0.01,
+      "min": 0.01,
+      "max": 0.06
+    },
+    "generation": {
+      "p50": 0.0,
+      "p70": 0.0,
+      "p100": 0.0,
+      "avg": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "query_details": [
+    {
+      "query": "What is the MS MARCO dataset?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.46,
+      "guardrails_ms": 0.06,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.83
+    },
+    {
+      "query": "How does retrieval-augmented generation work?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.1,
+      "guardrails_ms": 0.02,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.24
+    },
+    {
+      "query": "What is Sarvam AI and what model does it use for speech-to-text?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.06,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.16
+    },
+    {
+      "query": "What vector embedding model is used for dense vector search?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.07,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.21
+    },
+    {
+      "query": "What is HH Goa 2026?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.05,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.14
+    },
+    {
+      "query": "How does multi-strategy chunking differ from fixed splitting?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.13
+    },
+    {
+      "query": "What guardrails prevent hallucinations in RAG pipelines?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.12
+    },
+    {
+      "query": "What is the latency target for HH Goa 2026 Voice RAG?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.06,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.14
+    },
+    {
+      "query": "Explain how semantic chunking works.",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "What is Bing user queries dataset?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.12
+    },
+    {
+      "query": "How fast is vector retrieval with MiniLM embeddings?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "What happens when no relevant context is found in vector store?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.12
+    },
+    {
+      "query": "How are Indian languages supported in MSMARCO-XI?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "What is fixed-size chunking with overlap?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "Why are guardrails necessary for LLM outputs?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "How to make pizza dough at home?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.11
+    },
+    {
+      "query": "Who won the 1998 World Cup?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.05,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.16
+    },
+    {
+      "query": "What is P50 P70 P100 latency?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.13
+    },
+    {
+      "query": "What is Sarvam 2.0 speech model?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.12
+    },
+    {
+      "query": "How is end-to-end request latency measured?",
+      "status": "NO_CONTEXT",
+      "grounded": false,
+      "retrieval_ms": 0.04,
+      "guardrails_ms": 0.01,
+      "generation_ms": 0.0,
+      "total_e2e_ms": 0.12
+    }
+  ]
+}
